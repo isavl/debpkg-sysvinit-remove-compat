@@ -1,0 +1,5 @@
+sysvinit-remove-compat (1) unstable; urgency=low
+
+  * Initial release
+
+ -- Igor Savlook <isav@alzari.pw>  Thu, 27 Jul 2017 20:50:00 +0600

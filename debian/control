@@ -1,0 +1,14 @@
+Source: sysvinit-remove-compat
+Maintainer: Igor Savlook <isav@alzari.pw>
+Section: admin
+Priority: required
+Standards-Version: 3.9.8
+Build-Depends: debhelper (>=10)
+
+Package: sysvinit-remove-compat
+Architecture: all
+Depends: ${misc:Depends}
+Description: Remove sysvinit compatible completely
+ Debian do not fully integrated with systemd.
+ Systemd run sysvinit scripts. If need full systemd integration
+ that package can help.

@@ -1,0 +1,49 @@
+#!/bin/sh
+
+set -e
+
+remove_init()
+{
+    rm -f -r -- /etc/init
+}
+
+remove_initd()
+{
+    rm -f -r -- /etc/init.d
+}
+
+remove_rcd()
+{
+    local dirs="0 1 2 3 4 5 6 S"
+
+    for i in ${dirs}; do
+        rm -f -r -- /etc/rc${i}.d
+    done
+}
+
+remove_init
+remove_initd
+remove_rcd
+
+if [ "${1}" = "triggered" ]; then
+    shift
+
+    for trigger in ${@}; do
+        case ${trigger} in
+            /etc/init)
+                remove_init
+                ;;
+            /etc/init.d)
+                # When debian package installed he create some
+                # script in /etc/init.d and also symlinks in /etc/rc.d
+                # so need clean both directories.
+                remove_initd
+                remove_rcd
+                ;;
+        esac
+    done
+
+    exit 0
+fi
+
+#DEBHELPER#

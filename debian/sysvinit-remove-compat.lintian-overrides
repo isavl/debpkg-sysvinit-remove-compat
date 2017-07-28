@@ -1,0 +1,3 @@
+sysvinit-remove-compat binary: dir-in-usr-local
+sysvinit-remove-compat binary: file-in-usr-local
+sysvinit-remove-compat binary: file-in-unusual-dir

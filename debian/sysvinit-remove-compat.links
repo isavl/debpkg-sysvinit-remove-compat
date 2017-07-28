@@ -1,0 +1,10 @@
+/bin/true /usr/local/bin/deb-systemd-helper
+/bin/true /usr/local/bin/deb-systemd-invoke
+/bin/true /usr/local/bin/initctl
+/bin/true /usr/local/bin/invoke-rc.d
+/bin/true /usr/local/bin/restart
+/bin/true /usr/local/bin/service
+/bin/true /usr/local/bin/start
+/bin/true /usr/local/bin/start-stop-daemon
+/bin/true /usr/local/bin/stop
+/bin/true /usr/local/bin/update-rc.d
