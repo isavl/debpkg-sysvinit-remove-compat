@@ -11,4 +11,5 @@
 
 /bin/systemctl /sbin/halt
 /bin/systemctl /sbin/poweroff
+/bin/systemctl /sbin/reboot
 /bin/systemctl /sbin/shutdown

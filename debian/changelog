@@ -1,3 +1,9 @@
+sysvinit-remove-compat (2) unstable; urgency=medium
+
+  * Symlink halt, poweroff, reboot and shutdown to systemctl.
+
+ -- Igor Savlook <isav@alzari.pw>  Thu, 12 Oct 2017 13:30:48 +0300
+
 sysvinit-remove-compat (1) unstable; urgency=low
 
   * Initial release
